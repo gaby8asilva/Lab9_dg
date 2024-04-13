@@ -25,7 +25,7 @@ def decoder(new_password):
 
 # print(decoder("45678888"))
 def main():
-    encoded = ""
+    new_password = ""
     while True:
         print("Menu")
         print("-------------")
@@ -35,12 +35,12 @@ def main():
         option = input("Please enter an option: ")
 
         if option == "1":
-            password = input("Please enter your password to encode:")
-            encoded = encoder(password)
+            password = input("Please enter your password to encode: ")
+            new_password = encoder(password)
             print("Your password has been encoded and stored!")
         elif option == "2":
-            if encoded:
-                print(f"The encoded password is {encoded}, and the original password is {decoder(encoded)}")
+            if new_password:
+                print(f"The encoded password is {new_password}, and the original password is {decoder(new_password)}")
         elif option == "3":
             quit()
 
