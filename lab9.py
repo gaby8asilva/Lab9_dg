@@ -11,7 +11,9 @@ def encoder(password):
         new_password += str(new_digit)
     return new_password
 
+
 # print(encoder("12345555"))
+#DANA JIMENEZ
 def decoder(new_password):
     decoded_password = ""
     for digit in new_password:
