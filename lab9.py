@@ -12,6 +12,12 @@ def encoder(password):
     return new_password
 
 # print(encoder("12345555"))
+def decoder(new_password):
+    decoded_password = ""
+    for digit in new_password:
+        decoded_digit = str((int(digit) - 3))
+        decoded_password += decoded_digit
+    return decoded_password
 
 
 
