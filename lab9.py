@@ -19,7 +19,7 @@ def decoder(new_password):
     for digit in new_password:
         decoded_digit = str((int(digit) - 3))
         decoded_password += decoded_digit
-    return decoded_password
+    return decoded_password.replace("-", "").replace(" ", "")
 
 
 
